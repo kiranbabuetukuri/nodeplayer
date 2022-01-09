@@ -17,7 +17,7 @@ app.use(cors())
 const log=console.log
 const CONNECTION_URL="mongodb+srv://admin:password654@users.bvdv6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 // const CONsNECTION_URL="mongodb://127.0.0.1:27017/player"
-const PORT= process.env.PORT || 5000
+const PORT=8080// process.env.PORT || 5000
 
 app.use("/posts",postRoutes)
 mongoose.connect(CONNECTION_URL,{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>app.listen(PORT,()=>log(`Server running on port ${PORT}`))).catch(error=>{

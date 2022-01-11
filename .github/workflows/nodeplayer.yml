@@ -33,7 +33,7 @@ jobs:
       - name: Npm install & npm build
         run: |
           npm install
-          npm run build
+          npm start
           
       - name: S3 Sync
         uses: jakejarvis/s3-sync-action@v0.5.1

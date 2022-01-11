@@ -21,6 +21,6 @@ const PORT=8080// process.env.PORT || 5000
 
 app.use("/posts",postRoutes)
 mongoose.connect(CONNECTION_URL,{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>app.listen(PORT,()=>log(`Server running on port d ${PORT}`))).catch(error=>{
-log ("unable to connect mongodb url "+CONNECTION_URL)
+log ("unable to connect mongodb url   2"+CONNECTION_URL)
     log(error)
 })
